@@ -1,38 +1,24 @@
-.App {
-  text-align: center;
-}
+*{padding: 0; margin: 0; box-sizing: border-box;}
+li{list-style: none;}
+.App{max-width: 1000px; margin: auto;}
+.movie{display: flex;}
+.txtbox{width: 750px; padding-left: 10px;}
+.txtbox>*{margin: 5px 0;}
+.imgbox{width: 250px;}
+img{width: 100%;}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+button{padding: 3px 10px; color: #666; font-size: 18px; background: transparent; border-radius: 5px; outline: none; border: none; cursor: pointer;}
+button.order{margin: 0 5px 10px 0; border: 1px solid #666;}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.ReviewForm{width: 100%; margin: 50px auto; padding: 20px 5px 50px;  border: 1px solid #666; border-radius: 3px;}
+.form{display: flex;}
+.form>*{width: 50%; padding: 30px 5px 0;}
+.form .txtbox1{padding-top: 65px;}
+.form .txtbox1>*{width: 100%; padding: 5px; margin: 5px 0;}
+.form button{background: #666; color: #fff;}
+.imgbox1{height: 500px; overflow: hidden;}
+.imgbox1>div{display: flex; justify-content: space-between; margin: 5px 0 15px; }
+button.cancel{background: #ccc;}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.rating-star{display: inline-block; margin-bottom: 10px; color: #ccc; font-size: 30px; cursor: pointer;}
+.rating-star.selected{color: rgb(255, 180, 19);}
